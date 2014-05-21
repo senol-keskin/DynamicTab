@@ -9,7 +9,7 @@ html{
 	background: white;
 	font-size: 1em;
 	line-height: 1.4;
-	color: lighten($main-black,27%);
+	color: lighten($main-black,26.5%);
 }
 h1{
 	font-size: 1.2em;
@@ -21,33 +21,13 @@ p{
 p+p{
 	margin-top: 1em;
 }
-:focus{
-	outline: none;
-}
+
 input[type=radio]{
 	display: none;
 }
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table;
-}
-
-.clearfix:after {
-    clear: both;
-}
-/* ==========================================================================
-   Browse Happy prompt
-   ========================================================================== */
-.browsehappy {
-    margin: 0.2em 0;
-    background: darken($main-white,20%);
-    color: $main-black;
-    padding: 0.2em 0;
-}
 
 div.tab{
-	padding: 5px;
+	padding: .8%;
 	label{
 		display: inline-block;
 		border:1px solid $main-white;
@@ -78,60 +58,17 @@ input[type=radio]{
 	}
 }
 
-.dpb{
+%dpb{
 	display: block;
 }
 @for $i from 1 through $tab-content-count {
 	input#tab#{$i}:checked ~ div.tab-content-wrapper article.tab-#{$i}-content{
-		@extend .dpb;
+		@extend %dpb;
 	}
 }
-
-
 
 @media only screen and (max-width: 768px){
 	div.tab label.tab-link{
-		width: 100%;
 		display: block;
-		+article{
-			display: none;
-		}
 	}
-	div.tab-wider{
-		display: none;
-	}
-}
-
-
-/* Fixed Tab Rules */
-
-
-div.fix-tab{
-	width: 100%;
-	min-width: 500px;
-	display: table;
-	> div{
-		display: table-row;
-		> div{
-			display: table-cell;
-			vertical-align: top;
-		}
-	}
-}
-
-div.column{
-	background: darken($main-white, 10%);
-	width: 10%;
-	min-width: 100px;
-	label{
-		display: block;
-		margin-bottom: .4em;
-		&:last-child{
-			margin-bottom: 0
-		}
-	}	
-}
-
-div.fix-tab-content{
-	padding-left:1em;
 }

@@ -440,7 +440,7 @@ html {
   background: white;
   font-size: 1em;
   line-height: 1.4;
-  color: #454545;
+  color: #444444;
 }
 
 /* line 14, ../sass/style.scss */
@@ -459,55 +459,27 @@ p + p {
   margin-top: 1em;
 }
 
-/* line 24, ../sass/style.scss */
-:focus {
-  outline: none;
-}
-
-/* line 27, ../sass/style.scss */
+/* line 25, ../sass/style.scss */
 input[type=radio] {
   display: none;
 }
 
-/* line 31, ../sass/style.scss */
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  display: table;
-}
-
-/* line 36, ../sass/style.scss */
-.clearfix:after {
-  clear: both;
-}
-
-/* ==========================================================================
-   Browse Happy prompt
-   ========================================================================== */
-/* line 42, ../sass/style.scss */
-.browsehappy {
-  margin: 0.2em 0;
-  background: #cccccc;
-  color: black;
-  padding: 0.2em 0;
-}
-
-/* line 49, ../sass/style.scss */
+/* line 29, ../sass/style.scss */
 div.tab {
-  padding: 5px;
+  padding: .8%;
 }
-/* line 51, ../sass/style.scss */
+/* line 31, ../sass/style.scss */
 div.tab label {
   display: inline-block;
   border: 1px solid white;
 }
 
-/* line 57, ../sass/style.scss */
+/* line 37, ../sass/style.scss */
 article {
   display: none;
 }
 
-/* line 61, ../sass/style.scss */
+/* line 41, ../sass/style.scss */
 label {
   background: #bfbfbf;
   line-height: 1.8;
@@ -519,73 +491,26 @@ label {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 69, ../sass/style.scss */
+/* line 49, ../sass/style.scss */
 .no-touch label:hover {
   color: gray;
   background: #d1d1d1;
 }
 
-/* line 75, ../sass/style.scss */
+/* line 55, ../sass/style.scss */
 input[type=radio]:checked + label {
   background: #999999;
   color: white;
 }
 
-/* line 81, ../sass/style.scss */
-.dpb, input#tab1:checked ~ div.tab-content-wrapper article.tab-1-content, input#tab2:checked ~ div.tab-content-wrapper article.tab-2-content, input#tab3:checked ~ div.tab-content-wrapper article.tab-3-content {
+/* line 61, ../sass/style.scss */
+input#tab1:checked ~ div.tab-content-wrapper article.tab-1-content, input#tab2:checked ~ div.tab-content-wrapper article.tab-2-content, input#tab3:checked ~ div.tab-content-wrapper article.tab-3-content {
   display: block;
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 93, ../sass/style.scss */
+  /* line 71, ../sass/style.scss */
   div.tab label.tab-link {
-    width: 100%;
     display: block;
   }
-  /* line 96, ../sass/style.scss */
-  div.tab label.tab-link + article {
-    display: none;
-  }
-
-  /* line 100, ../sass/style.scss */
-  div.tab-wider {
-    display: none;
-  }
-}
-/* Fixed Tab Rules */
-/* line 109, ../sass/style.scss */
-div.fix-tab {
-  width: 100%;
-  min-width: 500px;
-  display: table;
-}
-/* line 113, ../sass/style.scss */
-div.fix-tab > div {
-  display: table-row;
-}
-/* line 115, ../sass/style.scss */
-div.fix-tab > div > div {
-  display: table-cell;
-  vertical-align: top;
-}
-
-/* line 122, ../sass/style.scss */
-div.column {
-  background: #e6e6e6;
-  width: 10%;
-  min-width: 100px;
-}
-/* line 126, ../sass/style.scss */
-div.column label {
-  display: block;
-  margin-bottom: .4em;
-}
-/* line 129, ../sass/style.scss */
-div.column label:last-child {
-  margin-bottom: 0;
-}
-
-/* line 135, ../sass/style.scss */
-div.fix-tab-content {
-  padding-left: 1em;
 }
